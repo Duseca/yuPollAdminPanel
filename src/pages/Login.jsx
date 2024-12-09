@@ -1,8 +1,5 @@
 import React from "react";
-import { Stepper } from "react-form-stepper";
-import { Divider } from "@mui/material";
 import logo from "../assets/logo1.png";
-import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 
@@ -18,30 +15,11 @@ const Login = () => {
 
         {/* Stepper */}
         <div className="flex-grow flex justify-center">
-          <div className="pr-0 sm:pr-32 bg-white w-full sm:w-[50%]">
-            <Stepper
-              steps={[
-                { label: "Login Process" },
-                { label: "2 Step Verification" },
-                { label: "Profile Completion" },
-              ]}
-              activeStep={0}
-              styleConfig={{
-                activeBgColor: "#E22400",
-                completedBgColor: "#ECECEC",
-                inactiveBgColor: "#E5E7EB",
-                activeTextColor: "#060606",
-                inactiveTextColor: "#C6C6C6",
-                circleFontSize: "0px",
-                size: "0.8rem",
-              }}
-            />
-          </div>
         </div>
       </div>
 
       {/* Form Section */}
-      <div className="min-h-screen flex flex-col items-center px-4 sm:px-6 lg:px-8">
+      <div className="min-h-96 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           {/* Heading */}
           <h2 className="text-3xl lg:text-4xl my-6 text-center font-semibold">
@@ -124,25 +102,6 @@ const Login = () => {
               </Link>
             </div>
           </form>
-
-          {/* Divider */}
-          <Divider sx={{ my: 3, fontSize: "0.875rem", color: "#6B7280" }}>
-            or login with
-          </Divider>
-
-          {/* Google Login Button */}
-          <div>
-            <button
-              type="button"
-              className="w-full flex items-center justify-center py-2 px-4 border border-gray-300 rounded-xl shadow-sm bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-            >
-              <FcGoogle className="text-2xl mr-2"/>
-              Sign in with Google
-            </button>
-          </div>
-          <div className="text-center text-sm">
-            <p>Not registered yet? <span className="text-red"> Create an Account </span></p>
-          </div>
         </div>
       </div>
     </div>
