@@ -11,6 +11,8 @@ import PollEdit from './pages/PoolEdit'
 import EditUser from './pages/EditUser'
 import Settings from './pages/Settings'
 import Notifications from './pages/Notifications'
+import Reset from './pages/Reset'
+import Forget from './pages/Forget'
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
           <Route path='profile' element={<Profile />} />
         </Route>
         <Route path='/login' element={<Login />} />
+        <Route path='/forget' element={<Forget />} />
+        <Route path='/reset' element={<Reset />} />
       </Routes>
     </>
   )

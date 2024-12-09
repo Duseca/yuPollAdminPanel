@@ -20,7 +20,7 @@ export default {
         red : "#E22400"
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Inter','Poppins', 'sans-serif'],
       },
     },
   },
